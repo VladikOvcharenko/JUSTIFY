@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  AOS.init();
+
   // анимация секции PROBLEMS
   const sectionProblems = document.querySelector('.problems');
   const list = sectionProblems.querySelector('.problems-info__list');
@@ -8,7 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const itemHeight = items[0].offsetHeight;
   const screenHeight = window.innerHeight;
+
+  // 👇 Шаг скролла для перехода к следующему элементу
+  const scrollStep = screenHeight * 0.8;
+
+  // 👇 Полный диапазон скролла — как в оригинале
   const scrollRange = screenHeight * (items.length - 1);
+
+  // 👇 Задаём высоту секции вручную, чтобы избежать рывков
+  sectionProblems.style.height = `${screenHeight * items.length - 600}px`;
+
   let currentIndex = 0;
 
   setActive(0);
@@ -22,8 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
       sectionProblems.classList.add('sticky');
       sectionProblems.classList.remove('sticky-end');
 
-      const newIndex = Math.round(relativeScroll / screenHeight);
-      if (newIndex !== currentIndex) {
+      // 👇 Используем scrollStep для переключения активного элемента
+      const newIndex = Math.round(relativeScroll / scrollStep);
+      if (newIndex !== currentIndex && newIndex < items.length) {
         currentIndex = newIndex;
         setActive(currentIndex);
       }
@@ -48,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       el.classList.toggle('active', i === index);
     });
   }
+
   // анимация секции PROBLEMS
 
   // анимация саекции system
