@@ -166,6 +166,7 @@
   .hero-avatar {
     /* width: 812px; */
     width: 42vw;
+    width: clamp(394px, 42vw, 812px);
     /* height: auto; */
     bottom: 0;
     z-index: 2;
@@ -262,6 +263,7 @@
 
   display: flex;
   align-items: flex-start;
+
   /* padding: 60px 0; */
   height: 100vh;
   height: 100dvh;
@@ -277,17 +279,18 @@
   .problems-wrapper {
     height: 100%;
     padding-top: 60px;
-    max-height: 869px;
-    height: 869px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   .problems-wrapper h2 {
     margin-top: 50px;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: clamp(28px, 3.65vw, 70px);
+    /* font-size: 3.65vw; */
+
     line-height: 100%;
     color: var(--text-color);
   }
@@ -325,11 +328,15 @@
     flex-direction: column;
     will-change: transform;
     transform: translate3d(0, 0, 0);
+    transition: transform 0.5s ease;
   }
   .problems-info__item {
     flex-shrink: 0;
     height: 240px;
-    padding: 60px 80px;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--third-family);
     font-weight: 500;
     font-size: 60px;
@@ -337,7 +344,7 @@
     text-align: center;
     color: var(--text-color);
     opacity: 0.3;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   .problems-info__item.active {
     opacity: 1;
@@ -347,11 +354,15 @@
   position: fixed;
   top: 60px;
   padding-bottom: 100px;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
   width: 100%;
 }
 .problems.sticky .problems-wrapper {
   padding-top: 0;
+}
+.problems.sticky .problems-info {
+  max-height: 850px;
 }
 .problems.sticky-end .container {
   position: relative;
@@ -383,6 +394,7 @@
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 80px;
+    font-size: clamp(28px, 4.2vw, 80px);
     line-height: 100%;
     text-align: center;
     color: var(--accent-color);
@@ -418,9 +430,11 @@
   }
   .system-step__title {
     max-width: 900px;
+    max-width: 50vw;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 80px;
+    font-size: clamp(28px, 4.2vw, 80px);
     line-height: 100%;
     text-align: center;
     color: var(--light-color);

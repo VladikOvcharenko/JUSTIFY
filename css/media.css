@@ -14,8 +14,63 @@
       right: 50px;
     }
   }
+  .problems {
+    .problems-wrapper {
+      padding-top: 60px;
+    }
+    .problems-wrapper h2 {
+      margin-top: 50px;
+      /* font-size: 70px; */
+    }
+
+    .problems-wrapper img {
+      margin-top: 80px;
+    }
+
+    .problems-info__box {
+      height: 200px;
+    }
+
+    .problems-info__item {
+      height: 200px;
+      font-size: 44px;
+    }
+  }
+  .system {
+    .system-step__title {
+      font-size: 40px;
+    }
+  }
+  .contact-form {
+    max-width: 900px;
+  }
 }
 @media screen and (max-width: 1440px) {
+  .problems {
+    .problems-wrapper {
+      padding-top: 60px;
+    }
+    .problems-wrapper h2 {
+      margin-top: 0px;
+      /* font-size: 70px; */
+    }
+
+    .problems-wrapper img {
+      margin-top: 80px;
+    }
+
+    .problems-info__box {
+      height: 200px;
+    }
+
+    .problems-info__item {
+      height: 200px;
+      font-size: 44px;
+    }
+  }
+  .contact-wrapper {
+    padding: 40px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .situations {
@@ -222,6 +277,12 @@
       }
     }
   }
+  .contact-info h2 {
+    font-size: 64px;
+  }
+  .contact-phone {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 800px) {
   .solutions {
@@ -266,6 +327,46 @@
     .solutions-name p {
       font-size: 16px;
     }
+  }
+  .problems {
+    .problems-container {
+      max-height: 966px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 470px auto;
+    }
+
+    .problems-wrapper {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+    }
+    .problems-wrapper h2 {
+      max-width: 400px;
+      margin-top: 0px;
+      font-size: 44px;
+    }
+
+    .problems-wrapper img {
+      margin-top: 30px;
+      height: 300px;
+      align-self: center;
+    }
+    .problems-info__box {
+      height: 160px;
+    }
+
+    .problems-info__item {
+      height: 160px;
+      font-size: 32px;
+    }
+  }
+  .problems.sticky .container {
+    padding-bottom: 10px;
+  }
+  .contact-wrapper {
+    padding: 30px;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 700px) {
@@ -355,5 +456,28 @@
     .solutions-name p {
       font-size: 10px;
     }
+  }
+  .contact-modal {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-info {
+    gap: 30px;
+  }
+  .contact-info h2 {
+    font-size: 40px;
+  }
+  .contact-phone {
+    font-size: 30px;
+  }
+  .contact-socials a {
+    width: 50px;
+    height: 50px;
+  }
+  .contact-socials a svg {
+    width: 26px;
+    height: 26px;
   }
 }
