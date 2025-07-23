@@ -253,14 +253,6 @@
       width: 24px;
     }
   }
-  .contact {
-    .contact-info h2 {
-      font-size: 64px;
-    }
-    .contact-phone {
-      font-size: 40px;
-    }
-  }
 
   .footer {
     padding: 40px 30px;
@@ -446,7 +438,7 @@
       transform: translateX(-50%);
     }
     .hero-avatar {
-      width: 600px;
+      max-width: 420px;
     }
     .hero-ellipse {
       width: 300px;
