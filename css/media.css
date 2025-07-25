@@ -438,10 +438,11 @@
       transform: translateX(-50%);
     }
     .hero-avatar {
+      width: 100%;
       max-width: 420px;
     }
     .hero-ellipse {
-      width: 300px;
+      width: 274px;
     }
     .hero-coll-text {
       right: 32px;
@@ -538,7 +539,7 @@
       gap: 14px;
     }
     .specialization-list__box h4 {
-      font-size: 28px;
+      font-size: 26px;
     }
     .specialization-list__box p {
       font-size: 12px;
@@ -605,7 +606,7 @@
     .reviews-wrapper {
       gap: 20px;
     }
-    .reviews-wrapper h3 {
+    .reviews-title {
       margin-top: 0;
     }
   }
@@ -659,6 +660,16 @@
     }
     .footer-contact__socials {
       margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .hero {
+    .hero-wrapper {
+      gap: 12px;
+    }
+    .hero-title {
+      margin-top: 70px;
     }
   }
 }

@@ -827,7 +827,7 @@
 
     color: var(--light-color);
   }
-  .reviews-wrapper h3 {
+  .reviews-title {
     margin-top: 20px;
     font-family: var(--second-family);
     font-weight: 400;
