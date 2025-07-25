@@ -418,13 +418,15 @@
     .hero-wrapper {
       flex-direction: column;
       align-items: center;
-      gap: 40px;
+      gap: 0px;
     }
     .hero-title {
       margin-top: 110px;
+      margin-top: 42%;
       font-size: 28px;
     }
     .hero-text {
+      margin-top: 6%;
       font-size: 16px;
     }
     .hero-subtitle {
@@ -663,7 +665,7 @@
     }
   }
 }
-@media screen and (max-width: 380px) {
+/* @media screen and (max-width: 380px) {
   .hero {
     .hero-wrapper {
       gap: 12px;
@@ -672,4 +674,4 @@
       margin-top: 70px;
     }
   }
-}
+} */
