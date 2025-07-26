@@ -573,7 +573,7 @@
     }
   }
   .problems.sticky .problems-info {
-    max-height: 400px;
+    max-height: 360px;
   }
   .system {
     .system-step__title {

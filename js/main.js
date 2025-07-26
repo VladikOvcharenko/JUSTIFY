@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentScrollY = window.scrollY;
 
     // Скрытие/показ хедера
-    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+    if (currentScrollY > lastScrollY && currentScrollY > 30) {
       // Скролл вниз
       header.classList.add('header--hidden');
     } else {
