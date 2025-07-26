@@ -1,6 +1,4 @@
 @media screen and (max-width: 1600px) {
-}
-@media screen and (max-width: 1600px) {
   .hero {
     .hero-text {
       padding: 0;
@@ -51,6 +49,12 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .header {
+    .container {
+    }
+    .header-nav {
+    }
+  }
   .problems {
     .problems-wrapper {
       padding-top: 60px;
@@ -93,7 +97,7 @@
       right: 0;
       height: 100vh;
       width: 100%;
-      max-width: 800px;
+      max-width: 580px;
       flex-direction: column;
       justify-content: center;
       gap: 150px;
@@ -106,9 +110,7 @@
     .header-menu--active {
       transform: translateX(0);
     }
-    .header-logo--active .header-logo__box p {
-      color: var(--light-color);
-    }
+
     .header-nav {
       background: transparent;
       border-radius: 0;
@@ -339,6 +341,14 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .header {
+    .header-logo--active .header-logo__box p {
+      color: var(--light-color);
+    }
+    .header-menu {
+      max-width: 800px;
+    }
+  }
   .solutions {
     padding: 60px 50px;
     .container {
@@ -418,6 +428,18 @@
   .problems.sticky .container {
     padding-bottom: 10px;
   }
+  .system {
+    .system-step__left {
+      left: -50px;
+
+      transform: translateX(-100%);
+    }
+    .system-step__right {
+      right: -50px;
+      bottom: 140px;
+      transform: translateX(100%);
+    }
+  }
   .specialization {
     .specialization-list {
       margin-top: 20px;
@@ -470,6 +492,9 @@
 @media screen and (max-width: 700px) {
   .page-body {
     background: var(--bg-color) url(../images/hero/hero-bg--mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   .container {
     padding: 0 12px;
@@ -579,8 +604,24 @@
     max-height: 360px;
   }
   .system {
+    .system-title {
+      top: 60px;
+    }
     .system-step__title {
       max-width: 320px;
+    }
+    .system-step__left,
+    .system-step__right {
+      width: 300px;
+    }
+
+    .system-step__left {
+      top: 120px;
+      left: -50px;
+    }
+    .system-step__right {
+      right: -50px;
+      bottom: 120px;
     }
   }
   .steps {
