@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>JUSTIFY</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+
+    <link rel="stylesheet" href="css/media.css" />
+    <style>
+      .problems {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+        height: 100dvh;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        .problems-container {
+          height: 100%;
+          max-height: 966px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          will-change: transform;
+        }
+
+        .problems-wrapper {
+          height: 100%;
+          padding-top: 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .problems-wrapper h2 {
+          margin-top: 50px;
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: clamp(28px, 3.65vw, 70px);
+          line-height: 100%;
+          color: var(--text-color);
+        }
+        .problems-wrapper h2 span {
+          color: var(--accent-color);
+        }
+        .problems-wrapper img {
+          margin-top: 200px;
+        }
+        .problems-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+        .problems-info__box {
+          position: relative;
+          height: 240px;
+          width: 100%;
+          background: linear-gradient(
+            270deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.6) 15%,
+            rgba(255, 255, 255, 0.6) 85%,
+            rgba(255, 255, 255, 0) 100%
+          );
+        }
+        .problems-info__scroll {
+          display: flex;
+          width: max-content;
+        }
+        .problems-info__list {
+          display: flex;
+          flex-direction: column;
+          will-change: transform;
+          transform: translate3d(0, 0, 0);
+          transition: transform 0.5s ease;
+        }
+        .problems-info__item {
+          flex-shrink: 0;
+          height: 240px;
+          padding: 0 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: var(--third-family);
+          font-weight: 500;
+          font-size: 60px;
+          line-height: 100%;
+          text-align: center;
+          color: var(--text-color);
+          opacity: 0.3;
+          transition: opacity 0.3s ease-out;
+        }
+        .problems-info__item.active {
+          opacity: 1;
+        }
+      }
+      .problems.sticky .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: none;
+      }
+      .problems.sticky .problems-wrapper {
+        padding-top: 0;
+      }
+      .problems.sticky .problems-info {
+        max-height: 850px;
+      }
+      .problems.sticky-end .container {
+        position: relative;
+        top: auto;
+      }
+    </style>
+  </head>
+  <body class="page-body">
+    <main>
+      <section class="situations" style="height: 100vh"></section>
+
+      <section class="problems">
+        <div class="problems-container container">
+          <div class="problems-wrapper">
+            <h2>Без адвоката ви <span>наражаєтесь</span> на</h2>
+            <img src="images/problems/problems-main.png" alt="" />
+          </div>
+          <div class="problems-info">
+            <div class="problems-info__scroll">
+              <div class="problems-info__box">
+                <ul class="problems-info__list list-reset">
+                  <li class="problems-info__item">
+                    <span>Психологічний тиск і «вибиті» зізнання</span>
+                  </li>
+                  <li class="problems-info__item">
+                    <span> Помилки , що ускладнять справу</span>
+                  </li>
+                  <li class="problems-info__item">
+                    <span>Арешт, обмеження волі, втрату репутації</span>
+                  </li>
+                  <li class="problems-info__item">
+                    <span>Втрата майна та коштів, а головне коштів</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="situations" style="height: 100vh"></section>
+    </main>
+
+    <script>
+      const sectionProblems = document.querySelector('.problems');
+      const list = sectionProblems.querySelector('.problems-info__list');
+      const items = Array.from(
+        sectionProblems.querySelectorAll('.problems-info__item')
+      );
+
+      const itemHeight = items[0].offsetHeight;
+      const screenHeight = window.innerHeight;
+      const scrollStep = screenHeight * 0.8;
+      const scrollRange = screenHeight * (items.length - 1);
+
+      // Устанавливаем высоту секции
+      sectionProblems.style.height = `${screenHeight * items.length}px`; // Убрано -600 для стабильности
+
+      let currentIndex = 0;
+      setActive(0);
+
+      // Debounce для события scroll
+      function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+          const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+          };
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+        };
+      }
+
+      const handleScroll = debounce(() => {
+        const sectionTop =
+          sectionProblems.getBoundingClientRect().top + window.scrollY;
+        const scrollY = window.scrollY;
+        const relativeScroll = scrollY - sectionTop;
+
+        if (relativeScroll >= 0 && relativeScroll <= scrollRange) {
+          sectionProblems.classList.add('sticky');
+          sectionProblems.classList.remove('sticky-end');
+
+          const newIndex = Math.min(
+            Math.round(relativeScroll / scrollStep),
+            items.length - 1
+          );
+          if (newIndex !== currentIndex) {
+            currentIndex = newIndex;
+            setActive(currentIndex);
+          }
+
+          list.style.transform = `translate3d(0, ${
+            -itemHeight * currentIndex
+          }px, 0)`;
+        } else if (relativeScroll > scrollRange) {
+          sectionProblems.classList.remove('sticky');
+          sectionProblems.classList.add('sticky-end');
+          list.style.transform = `translate3d(0, ${
+            -itemHeight * (items.length - 1)
+          }px, 0)`;
+          setActive(items.length - 1);
+        } else {
+          sectionProblems.classList.remove('sticky', 'sticky-end');
+          list.style.transform = `translate3d(0, 0, 0)`;
+          setActive(0);
+        }
+      }, 10); // 10ms задержка для плавности
+
+      window.addEventListener('scroll', handleScroll);
+
+      function setActive(index) {
+        items.forEach((el, i) => {
+          el.classList.toggle('active', i === index);
+        });
+      }
+
+      // Пересчет высоты при изменении размера окна
+      window.addEventListener('resize', () => {
+        const newScreenHeight = window.innerHeight;
+        sectionProblems.style.height = `${newScreenHeight * items.length}px`;
+      });
+    </script>
+  </body>
+</html>
