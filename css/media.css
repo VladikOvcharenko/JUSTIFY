@@ -468,6 +468,9 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .page-body {
+    background: var(--bg-color) url(../images/hero/hero-bg--mobile.png);
+  }
   .container {
     padding: 0 12px;
   }

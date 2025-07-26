@@ -32,14 +32,14 @@ html {
   margin: 0;
   min-width: 375px;
   min-height: 100%;
-  /* padding-bottom: env(safe-area-inset-bottom); */
-}
-
-body {
   background: var(--bg-color) url(../images/hero/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* padding-bottom: env(safe-area-inset-bottom); */
+}
+
+body {
 }
 
 main {

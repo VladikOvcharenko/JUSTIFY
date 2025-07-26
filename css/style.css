@@ -78,14 +78,13 @@
     width: 100%;
     max-width: 657px;
 
-    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
   }
   .header-nav__item {
-    padding: 12px 0;
+    padding: 12px 30px;
     border-radius: 60px;
 
     background: transparent;
@@ -489,8 +488,9 @@
   .system-step__left,
   .system-step__right {
     position: absolute;
-    width: clamp(200px, 22.92vw, 440px);
-    height: clamp(200px, 22.92vw, 440px);
+    width: 700px;
+    /* width: clamp(200px, 22.92vw, 440px); */
+    /* height: clamp(200px, 22.92vw, 440px); */
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
   }
