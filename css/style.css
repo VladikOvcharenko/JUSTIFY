@@ -356,7 +356,6 @@
 
 .system {
   height: 300vh;
-  /* height: 300dvh; */
   position: relative;
   padding-bottom: env(safe-area-inset-bottom);
 
@@ -364,7 +363,6 @@
     position: sticky !important;
     top: 0;
     height: 100vh;
-    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;

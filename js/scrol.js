@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollRange = screenHeight * (items.length - 1);
 
   // 👇 Задаём высоту секции вручную, чтобы избежать рывков
-  sectionProblems.style.height = `${screenHeight * items.length - 600}px`;
+  sectionProblems.style.height = `${screenHeight * items.length - 400}px`;
 
   let currentIndex = 0;
 
