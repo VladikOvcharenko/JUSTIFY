@@ -40,13 +40,6 @@ html {
   /* padding-bottom: env(safe-area-inset-bottom); */
 }
 
-body {
-}
-
-main {
-  /* overflow: hidden; */
-}
-
 img {
   max-width: 100%;
   height: auto;

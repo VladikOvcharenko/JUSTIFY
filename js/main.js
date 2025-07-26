@@ -63,31 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   // burger
-
-  function initScrollAnimation() {
-    const animatedElements = document.querySelectorAll('.animate-block');
-
-    console.log(animatedElements);
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-animated');
-          } else {
-            entry.target.classList.remove('is-animated');
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: '-50px 0px -50px 0px',
-      }
-    );
-
-    animatedElements.forEach((element) => {
-      observer.observe(element);
-    });
-  }
-  initScrollAnimation();
 });

@@ -1,126 +1,9 @@
 @font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro-Medium.eot');
-  src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
-    url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GothamPro-Medium.woff') format('woff'),
-    url('../fonts/GothamPro-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro-Bold.eot');
-  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
-    url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GothamPro-Bold.woff') format('woff'),
-    url('../fonts/GothamPro-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro-Light.eot');
-  src: local('Gotham Pro Light'), local('GothamPro-Light'),
-    url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GothamPro-Light.woff') format('woff'),
-    url('../fonts/GothamPro-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro-Black.eot');
-  src: local('Gotham Pro Black'), local('GothamPro-Black'),
-    url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GothamPro-Black.woff') format('woff'),
-    url('../fonts/GothamPro-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro.eot');
-  src: local('Gotham Pro'), local('GothamPro'),
-    url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GothamPro.woff') format('woff'),
-    url('../fonts/GothamPro.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro-MediumItalic.eot');
-  src: local('Gotham Pro Medium Italic'), local('GothamPro-MediumItalic'),
-    url('../fonts/GothamPro-MediumItalic.eot?#iefix')
-      format('embedded-opentype'),
-    url('../fonts/GothamPro-MediumItalic.woff') format('woff'),
-    url('../fonts/GothamPro-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'Refinery 95 Bold';
   src: url('../fonts/Refinery-95-Bold.woff2');
   src: local('Refinery 95 Bold'),
     url('../fonts/Refinery-95-Bold.woff2') format('woff2');
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Ramillas Trl';
-  src: url('../fonts/tt_ramillas/TT\ Ramillas\ Trial\ Regular.ttf');
-  src: local('TT Ramillas Trl'),
-    url('../fonts/tt_ramillas/TT\ Ramillas\ Trial\ Regular.ttf') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TT Ramillas Trl';
-  src: url('../fonts/tt_ramillas/TT\ Ramillas\ Trial\ Medium.ttf');
-  src: local('TT Ramillas Trl'),
-    url('../fonts/tt_ramillas/TT\ Ramillas\ Trial\ Medium.ttf') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TT Ramillas Trl Variable Italic';
-  src: url('../fonts/tt_ramillas/TT\ Ramillas\ Trial\ Variable\ Italic.ttf');
-  src: local('TT Ramillas Trl Variable Italic'),
-    url('../fonts/tt_ramillas/TT\ Ramillas\ Trial\ Variable\ Italic.ttf')
-      format('woff2');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/Gilroy/Gilroy-Regular.woff');
-  src: local('Gilroy'),
-    url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/Gilroy/Gilroy-Medium.woff');
-  src: local('Gilroy'),
-    url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/Gilroy/Gilroy-Bold.woff');
-  src: local('Gilroy'), url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff2');
-  font-weight: bold;
   font-style: normal;
 }
 @font-face {
@@ -129,5 +12,79 @@
   src: local('Helvetica Neue'),
     url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro/GothamProMedium.woff2');
+  src: local('Gotham Pro Medium'),
+    url('../fonts/GothamPro/GothamProMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro/GothamProBold.woff2');
+  src: local('Gotham Pro Bold'),
+    url('../fonts/GothamPro/GothamProBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro/GothamPro.woff2');
+  src: local('Gotham Pro'),
+    url('../fonts/GothamPro/GothamPro.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Ramillas Trl';
+  src: url('../fonts/tt_ramillas/TTRamillasTrialRegular.woff2');
+  src: local('TT Ramillas Trl'),
+    url('../fonts/tt_ramillas/TTRamillasTrialRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Ramillas Trl';
+  src: url('../fonts/tt_ramillas/TTRamillasTrialMedium.woff2');
+  src: local('TT Ramillas Trl'),
+    url('../fonts/tt_ramillas/TTRamillasTrialMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Ramillas Trl Variable Italic';
+  src: url('../fonts/tt_ramillas/TTRamillasTrialRegular.woff2');
+  src: local('TT Ramillas Trl Variable Italic'),
+    url('../fonts/tt_ramillas/TTRamillasTrialRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Regular.woff2');
+  src: local('Gilroy'),
+    url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Medium.woff2');
+  src: local('Gilroy'),
+    url('../fonts/Gilroy/Gilroy-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/GilroyBold.woff2');
+  src: local('Gilroy'), url('../fonts/Gilroy/GilroyBold.woff2') format('woff2');
+  font-weight: bold;
   font-style: normal;
 }

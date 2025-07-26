@@ -8,11 +8,14 @@
     />
     <title>JUSTIFY</title>
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/settings.css" />
@@ -58,7 +61,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="hero-container container">
           <div class="hero-wrapper">
             <h1
               class="hero-title"
@@ -109,7 +112,7 @@
       </section>
 
       <section class="situations">
-        <div class="container">
+        <div class="situations-container container">
           <h2 class="situations-title">Ми вирішуємо критичні ситуації</h2>
           <ul class="situations-list list-reset">
             <li>
@@ -148,7 +151,9 @@
             data-aos-duration="800"
             data-aos-delay="500"
           >
-            <h2>Без адвоката ви <span>наражаєтесь</span> на</h2>
+            <h2 class="problems-title">
+              Без адвоката ви <span>наражаєтесь</span> на
+            </h2>
             <img src="images/problems/problems-main.png" alt="" />
           </div>
           <div
@@ -235,7 +240,7 @@
       </section>
 
       <section class="steps">
-        <div class="container">
+        <div class="steps-container container">
           <div class="steps-wrapper">
             <h2
               class="steps-title"
@@ -311,7 +316,7 @@
       </section>
 
       <section class="solutions">
-        <div class="container">
+        <div class="solutions-container container">
           <img
             class="solutions-logo"
             src="images/logo.svg"
@@ -322,6 +327,7 @@
           />
           <div class="solutions-wrapper">
             <h2
+              class="solutions-title"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
@@ -366,9 +372,9 @@
       </section>
 
       <section class="specialization">
-        <div class="container">
+        <div class="specialization-container container">
           <div class="specialization-wrapper">
-            <h2>Спеціалізація</h2>
+            <h2 class="specialization-title">Спеціалізація</h2>
             <h3>наша експертиза</h3>
           </div>
           <ul class="specialization-list list-reset">
@@ -429,7 +435,7 @@
       </section>
 
       <section class="situations">
-        <div class="container">
+        <div class="situations-container container">
           <h2 class="situations-title">Що ви отримуєте з нами</h2>
           <ul class="situations-list list-reset">
             <li>
@@ -461,8 +467,13 @@
       </section>
 
       <section class="services">
-        <div class="container">
-          <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+        <div class="services-container container">
+          <h2
+            class="services-title"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
             Додаткові послуги
           </h2>
           <ul class="services-list list-reset">
@@ -548,10 +559,10 @@
       </section>
 
       <section class="reviews">
-        <div class="container">
+        <div class="reviews-container container">
           <div class="reviews-wrapper">
-            <h2>відгуки</h2>
-            <p class="reviews-title">що кажуть клієнти</p>
+            <h2 class="reviews-title">відгуки</h2>
+            <p class="reviews-subtitle">що кажуть клієнти</p>
             <div class="reviews-nav">
               <div class="reviews-nav__pagination"></div>
               <div class="reviews-nav__btn">
@@ -624,10 +635,10 @@
       </section>
 
       <section class="contact" id="contact">
-        <div class="container flex">
+        <div class="contact-container container">
           <div class="contact-wrapper">
             <div class="contact-info">
-              <h2>ЗВ'ЯЖІТЬСЯ З ВАШИМ АДВОКАТОМ ЗАРАЗ</h2>
+              <h2 class="contact-title">ЗВ'ЯЖІТЬСЯ З ВАШИМ АДВОКАТОМ ЗАРАЗ</h2>
 
               <a href="tel:+380442338239" class="contact-phone"
                 >+38 (044) 233-82-39</a
@@ -738,7 +749,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container container">
         <div class="footer-top">
           <a href="#"><img src="images/logo.svg" alt="" /></a>
         </div>
@@ -834,7 +845,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/main.js"></script>
+    <script src="js/validation-fom.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/scrol.js"></script>
   </body>
