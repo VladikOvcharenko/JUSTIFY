@@ -743,7 +743,7 @@
     }
   }
 }
-/* @media screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {
   .hero {
     .hero-wrapper {
       gap: 12px;
@@ -752,4 +752,4 @@
       margin-top: 70px;
     }
   }
-} */
+}
