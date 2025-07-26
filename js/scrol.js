@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  AOS.init();
-
   // анимация секции PROBLEMS
   const sectionProblems = document.querySelector('.problems');
   const list = sectionProblems.querySelector('.problems-info__list');
