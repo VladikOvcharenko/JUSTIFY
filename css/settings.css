@@ -36,6 +36,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
   /* padding-bottom: env(safe-area-inset-bottom); */
 }
 
