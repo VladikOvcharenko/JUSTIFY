@@ -746,7 +746,7 @@
 @media screen and (max-width: 380px) {
   .hero {
     .hero-wrapper {
-      gap: 12px;
+      gap: 10px;
     }
     .hero-title {
       margin-top: 70px;
