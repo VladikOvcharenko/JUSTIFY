@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menuLinks.forEach((link) => {
     link.addEventListener('click', () => {
       burgerBtn.classList.remove('burger--active');
-      navMenu.classList.remove('header-nav--active');
+      navMenu.classList.remove('header-menu--active');
       body.classList.remove('dis-scroll');
     });
   });
