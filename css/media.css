@@ -454,9 +454,8 @@
   .header-menu {
     padding-bottom: 0px;
   }
-  .header-logo img {
-    width: 30px;
-    height: 36px;
+  .header-logo svg {
+    width: 47px;
   }
   .header-logo__box {
     height: 36px;
