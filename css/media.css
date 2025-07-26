@@ -2,6 +2,12 @@
   .hero-text {
     padding: 0;
   }
+  .header-nav__list {
+    gap: 10px;
+  }
+  .header-nav__item {
+    padding: 12px 16px;
+  }
   .solutions-title {
     font-size: clamp(28px, 4.69vw, 90px);
   }
@@ -78,7 +84,7 @@
     gap: 150px;
     background: var(--text-color);
     z-index: 9;
-    transform: translateX(100%);
+    transform: translateX(130%);
     transition: transform 0.3s ease;
   }
   .header-menu--active {
@@ -295,6 +301,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .header-logo--active .logo-icon {
+    fill: var(--light-color);
+  }
   .header-logo--active .header-logo__box p {
     color: var(--light-color);
   }
@@ -542,7 +551,7 @@
   }
 
   .system-title {
-    top: 60px;
+    top: 100px;
   }
   .system-step__title {
     max-width: 320px;
@@ -696,6 +705,9 @@
 
   .footer {
     padding: 30px 12px;
+  }
+  .footer-container {
+    padding: 20px;
   }
   .footer-nav {
     grid-column: 2 span;
