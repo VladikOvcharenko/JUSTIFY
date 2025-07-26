@@ -518,6 +518,7 @@
 
 .steps {
   padding: 60px 50px;
+  overflow: hidden;
   .container {
     padding: 0;
     display: grid;
@@ -787,7 +788,7 @@
     transition: color 0.5s ease;
   }
   .specialization-list__btn {
-    display: none;
+    /* display: none; */
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -813,6 +814,7 @@
 .services {
   padding: 60px 0;
   background: var(--bg-color);
+  overflow: hidden;
 
   .container {
     display: flex;
