@@ -11,9 +11,11 @@ const swiper = new Swiper('.reviews-slider', {
     // clickable: true,
     renderBullet: function (index, className) {
       const labels = [
-        'Віталій, держслужбовець  ',
-        'Ганна, CEO IT-компанії  ',
-        'Марина, мати',
+        'Надія, директор Товариства',
+        'Таісія, директор Товариства',
+        'Владислав',
+        'Віктор',
+        'Дмитро',
       ];
       return `<div class="${className} reviews-nav__item">${labels[index]}</div>`;
     },
