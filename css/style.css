@@ -406,8 +406,7 @@
 .system {
   height: 300vh;
   position: relative;
-  overflow: hidden;
-  padding-bottom: env(safe-area-inset-bottom);
+  /* overflow: hidden; */
 }
 .system-content {
   position: sticky !important;
