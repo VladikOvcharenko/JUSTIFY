@@ -58,9 +58,8 @@
 
 .header-menu {
   width: 100%;
-
-  /* max-width: clamp(800px, 70.31vw, 1350px); */
-  max-width: minmax(1140, 1350px);
+  max-width: 1350px;
+  max-width: clamp(1000px, 69.31vw, 1350px);
   display: flex;
   align-items: center;
   justify-content: space-between;
