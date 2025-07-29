@@ -241,6 +241,7 @@
 
 .situations {
   padding: 0px 50px 60px;
+  overflow: hidden;
 }
 .situations-container {
   display: flex;
@@ -405,6 +406,7 @@
 .system {
   height: 300vh;
   position: relative;
+  overflow: hidden;
   padding-bottom: env(safe-area-inset-bottom);
 }
 .system-content {
@@ -574,6 +576,7 @@
 
 .solutions {
   padding: 60px 50px;
+  overflow: hidden;
 }
 .solutions-container {
   position: relative;
@@ -834,6 +837,7 @@
 .reviews {
   padding: 60px 50px;
   background: var(--bg-color);
+  overflow: hidden;
 }
 
 .reviews-container {
