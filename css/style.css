@@ -58,8 +58,9 @@
 
 .header-menu {
   width: 100%;
-  max-width: 1350px;
-  max-width: clamp(800px, 70.31vw, 1350px);
+
+  /* max-width: clamp(800px, 70.31vw, 1350px); */
+  max-width: minmax(1140, 1350px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,6 +76,7 @@
 }
 .header-nav__list {
   width: 100%;
+  min-width: 532px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,7 +108,7 @@
 }
 
 .header-contact {
-  min-width: 392px;
+  min-width: 428px;
   display: flex;
   align-items: center;
   gap: 20px;
