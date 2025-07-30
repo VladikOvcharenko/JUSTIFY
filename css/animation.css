@@ -1,0 +1,57 @@
+[data-animation] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-up {
+  transform: translateY(50%);
+}
+
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-down {
+  transform: translateY(-50%);
+}
+
+.fade-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-left {
+  transform: translateX(-50%);
+}
+
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right {
+  transform: translateX(50%);
+}
+
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+.zoom-in {
+  transform: scale(0.8);
+}
+
+.zoom-inBg {
+  opacity: 1;
+  transform: scale(2);
+}
+.zoom-inBg.visible {
+  transform: scale(1);
+}

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // AOS
-  AOS.init();
+  // AOS.init();
   // AOS
 
   // header
