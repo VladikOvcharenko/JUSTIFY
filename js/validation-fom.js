@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const forms = [
-    document.getElementById('form'),
-    // document.getElementById('modal-form-proposal'),
-    // document.getElementById('modal-form-coll'),
-  ];
+  const forms = [document.getElementById('form')];
 
   const phoneInputs = document.querySelectorAll('input[type="tel"]');
 
