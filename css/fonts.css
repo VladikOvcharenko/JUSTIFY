@@ -82,9 +82,10 @@
 }
 @font-face {
   font-family: 'TT Ramillas Trl Variable Italic';
-  src: url('../fonts/tt_ramillas/TTRamillasTrialRegular.woff2');
+  src: url('../fonts/tt_ramillas/TTRamillasTrialVariableItalic.woff2');
   src: local('TT Ramillas Trl Variable Italic'),
-    url('../fonts/tt_ramillas/TTRamillasTrialRegular.woff2') format('woff2');
+    url('../fonts/tt_ramillas/TTRamillasTrialVariableItalic.woff2')
+      format('woff2');
   font-weight: 400;
   font-style: italic;
 }
