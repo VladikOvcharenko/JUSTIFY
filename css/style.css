@@ -220,6 +220,9 @@
   opacity: 0.54;
   pointer-events: none;
 }
+.hero-subtitle__item {
+  transform: translateY(50%);
+}
 .hero-avatar,
 .hero-ellipse {
   position: absolute;

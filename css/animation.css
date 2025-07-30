@@ -2,24 +2,23 @@
   opacity: 0;
   transition-property: opacity, transform;
   transition-timing-function: ease;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
+  will-change: transform, opacity;
 }
 
 .fade-up {
   transform: translateY(50%);
 }
-
-.fade-down.visible {
+.fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 .fade-down {
   transform: translateY(-50%);
+}
+.fade-down.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-left.visible {

@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
           el.classList.remove('visible');
           el.style.transitionDelay = '0s';
           el.style.transitionDuration = '0.6s';
-          // el.classList.remove(animationType); // если нужно сбрасывать анимацию
         }
       });
     },
@@ -26,5 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   );
 
-  animatedElements.forEach((el) => observer.observe(el));
+  // ❗️Отложенный запуск observer (чтобы начальные стили успели примениться)
+  setTimeout(() => {
+    animatedElements.forEach((el) => observer.observe(el));
+  }, 50); // 50–100 мс достаточно
 });
