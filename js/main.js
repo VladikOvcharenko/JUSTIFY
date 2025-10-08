@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // AOS
-  // AOS.init();
-  // AOS
-
   // header
   const header = document.querySelector('.header');
 
@@ -63,4 +59,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   // burger
+
+  // specialization-nav
+
+  const navItems = document.querySelectorAll('.specialization-nav__item');
+  const lists = document.querySelectorAll('.specialization-list');
+  const content = document.querySelector('.specialization-content');
+
+  const activeList = document.querySelector('.specialization-list.active');
+
+  content.style.height = activeList.scrollHeight - 80 + 'px';
+
+  navItems.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('active')) return;
+
+      navItems.forEach((i) => i.classList.remove('active'));
+      btn.classList.add('active');
+
+      const current = document.querySelector('.specialization-list.active');
+      const next = lists[index];
+
+      current.classList.remove('active');
+      next.classList.add('active');
+
+      const newHeight = next.scrollHeight + 'px';
+      content.style.height = newHeight;
+    });
+  });
+
+  // specialization-nav
 });
