@@ -1320,8 +1320,8 @@
 }
 
 .footer-contact__socials li a {
-  width: clamp(40px, 4.17vw, 80px);
-  height: clamp(40px, 4.17vw, 80px);
+  width: clamp(40px, 4.17vw, 64px);
+  height: clamp(40px, 4.17vw, 64px);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -7,6 +7,7 @@ const swiper = new Swiper('.reviews-slider', {
     prevEl: '.reviews-nav__btn--prev',
   },
   pagination: {
+    clickable: true,
     el: '.reviews-nav__pagination',
     // clickable: true,
     renderBullet: function (index, className) {
