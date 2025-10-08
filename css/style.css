@@ -1025,6 +1025,11 @@
 .finance-wrapper {
   position: relative;
   max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+
   z-index: 5;
 }
 .finance-title {

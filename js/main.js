@@ -8,16 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function onScroll() {
     const currentScrollY = window.scrollY;
 
-    // Скрытие/показ хедера
     if (currentScrollY > lastScrollY && currentScrollY > 30) {
-      // Скролл вниз
       header.classList.add('header--hidden');
     } else {
-      // Скролл вверх
       header.classList.remove('header--hidden');
     }
 
-    // Добавление фона при 200px+
     if (currentScrollY > 200) {
       header.classList.add('header--scrolled');
     } else {
@@ -55,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       burgerBtn.classList.remove('burger--active');
       navMenu.classList.remove('header-menu--active');
+      headerLogo.classList.remove('header-logo--active');
       body.classList.remove('dis-scroll');
     });
   });
