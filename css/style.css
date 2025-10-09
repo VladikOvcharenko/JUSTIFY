@@ -182,7 +182,7 @@
 }
 .hero-title {
   margin-bottom: 120px;
-  max-width: 668px;
+  max-width: clamp(28px, 34.9vw, 668px);
 
   font-family: var(--third-family);
   font-weight: 500;
