@@ -60,28 +60,55 @@ document.addEventListener('DOMContentLoaded', () => {
   // specialization-nav
 
   const navItems = document.querySelectorAll('.specialization-nav__item');
+  const navLinks = document.querySelectorAll('a[href="#specialization"]');
   const lists = document.querySelectorAll('.specialization-list');
   const content = document.querySelector('.specialization-content');
 
   const activeList = document.querySelector('.specialization-list.active');
 
-  content.style.height = activeList.scrollHeight - 80 + 'px';
+  console.log(navLinks);
+
+  if (activeList && content) {
+    content.style.height = activeList.scrollHeight - 80 + 'px';
+  }
+
+  function activateTab(index) {
+    navItems.forEach((i) => i.classList.remove('active'));
+    if (navItems[index]) {
+      navItems[index].classList.add('active');
+    }
+
+    const current = document.querySelector('.specialization-list.active');
+    const next = lists[index];
+
+    if (current) {
+      current.classList.remove('active');
+    }
+
+    if (next) {
+      next.classList.add('active');
+
+      if (content) {
+        const newHeight = next.scrollHeight + 'px';
+        content.style.height = newHeight;
+      }
+    }
+  }
 
   navItems.forEach((btn, index) => {
     btn.addEventListener('click', () => {
       if (btn.classList.contains('active')) return;
+      activateTab(index);
+    });
+  });
 
-      navItems.forEach((i) => i.classList.remove('active'));
-      btn.classList.add('active');
-
-      const current = document.querySelector('.specialization-list.active');
-      const next = lists[index];
-
-      current.classList.remove('active');
-      next.classList.add('active');
-
-      const newHeight = next.scrollHeight + 'px';
-      content.style.height = newHeight;
+  navLinks.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (btn.hasAttribute('data-fiz')) {
+        activateTab(0);
+      } else if (btn.hasAttribute('data-biz')) {
+        activateTab(1);
+      }
     });
   });
 
