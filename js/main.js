@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const activeList = document.querySelector('.specialization-list.active');
 
-  console.log(navLinks);
-
   if (activeList && content) {
     content.style.height = activeList.scrollHeight - 80 + 'px';
   }

@@ -344,8 +344,6 @@
 .choice {
   padding: 60px 0px;
 }
-.choice-container {
-}
 
 .choice-wrapper {
   display: grid;
@@ -356,6 +354,8 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  overflow: hidden;
 }
 .choice-row {
   display: contents;
@@ -834,6 +834,69 @@
 }
 /* services */
 
+/* clients */
+.clients {
+  padding: 60px 0;
+}
+.clients-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.clients-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: clamp(32px, 4.17vw, 80px);
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #191626;
+}
+.clients-list {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.clients-list__item {
+  flex: 0 1 348px;
+  width: 100%;
+  max-width: 340px;
+  min-width: 200px;
+  height: 236px;
+
+  padding: 24px 20px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--light-color);
+}
+.clients-list__item img {
+  margin: auto 0;
+}
+.clients-list__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #171828;
+}
+.clients-list__title--small {
+  margin-top: auto;
+  font-size: 20px;
+}
+/* clients */
+
 /* reviews */
 .reviews {
   padding: 60px 50px;
@@ -987,8 +1050,7 @@
 .finance {
   background: var(--bg-color);
 }
-.finance-container {
-}
+
 .finance-content {
   position: relative;
   padding: 60px;
