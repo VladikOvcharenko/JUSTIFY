@@ -30,6 +30,10 @@
   .solutions-ellipse {
     right: 50px;
   }
+  .steps-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   .contact-form {
     max-width: 900px;
