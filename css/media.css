@@ -432,6 +432,10 @@
   .situations-text {
     font-size: 18px;
   }
+  .solutions-button-next:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+  }
 
   .specialization-contact {
     display: none;
@@ -527,8 +531,7 @@
     min-width: auto;
     gap: 20px;
   }
-  .clients-list__title {
-  }
+
   .clients-list__title--small {
     font-size: 18px;
   }
