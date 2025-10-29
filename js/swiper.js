@@ -22,3 +22,15 @@ const swiper = new Swiper('.reviews-slider', {
     },
   },
 });
+
+const solutionsSlider = new Swiper('.solutions-slider', {
+  loop: true,
+  effect: 'fade',
+  navigation: {
+    nextEl: '.solutions-button-next',
+  },
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: false,
+  },
+});

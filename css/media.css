@@ -19,7 +19,7 @@
     padding: 12px 16px;
   }
   .solutions-title {
-    font-size: 68px;
+    font-size: 60px;
   }
   .solutions-photo {
     right: 50px;
@@ -79,13 +79,24 @@
   .contact-wrapper {
     padding: 40px;
   }
-  .solutions {
-    /* margin-top: -90px; */
-    padding: 0px 50px 60px;
-  }
+
   .solutions-title {
     max-width: 570px;
-    font-size: 54px;
+    font-size: 48px;
+  }
+  .solutions-photo {
+    width: 466px;
+  }
+  .solutions-ellipse {
+    width: 450px;
+  }
+
+  .solutions-button-next {
+    width: 80px;
+    height: 80px;
+  }
+  .solutions-button-next svg {
+    width: 50%;
   }
 
   .choice-list__item {
@@ -233,10 +244,8 @@
   .steps-list li span {
     font-size: clamp(32px, 6.68vw, 80px);
   }
-  .solutions {
-    padding: 60px 50px;
-  }
-  .solutions-container {
+
+  .solutions-slide {
     height: 540px;
     padding: 40px;
     justify-content: flex-start;
@@ -250,7 +259,7 @@
   .solutions-title {
     padding-bottom: 25px;
     max-width: 950px;
-    max-width: 80%;
+    max-width: 82%;
     font-size: 28px;
   }
   .solutions-name {
@@ -264,7 +273,7 @@
   }
   .solutions-photo {
     position: absolute;
-    bottom: -130px;
+
     right: 10px;
     width: 400px;
     z-index: 4;
@@ -360,11 +369,7 @@
     max-width: 800px;
   }
 
-  .solutions {
-    /* margin-top: -130px; */
-    padding: 0px 50px 60px;
-  }
-  .solutions-container {
+  .solutions-slide {
     height: 720px;
     padding: 20px;
     justify-content: space-between;
@@ -725,7 +730,7 @@
   .solutions {
     padding: 40px 12px 30px;
   }
-  .solutions-container {
+  .solutions-slide {
     height: 580px;
     padding: 20px;
     align-items: center;
@@ -734,11 +739,11 @@
   }
   .solutions-logo {
     width: 118px;
-    height: 42px;
+    height: auto;
   }
   .solutions-title {
-    max-width: 94%;
-    font-size: 28px;
+    max-width: 100%;
+    font-size: 26px;
   }
   .solutions-photo {
     bottom: 0;
@@ -764,6 +769,11 @@
   }
   .solutions-position p {
     font-size: 14px;
+  }
+  .solutions-button-next {
+    right: 10px;
+    width: 40px;
+    height: 40px;
   }
 
   .services {
