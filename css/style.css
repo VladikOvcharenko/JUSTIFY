@@ -327,7 +327,7 @@
 .situations-list li:nth-of-type(5) {
   border-right: 1px solid #e6e6e6;
 }
-.situations-list h3 {
+.situations-list span {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 28px;
