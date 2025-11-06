@@ -164,8 +164,8 @@
 }
 
 .hero {
-  height: 100vh;
-  max-height: 970px;
+  height: 970px;
+
   overflow: hidden;
 }
 .hero-container {

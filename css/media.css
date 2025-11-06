@@ -191,6 +191,7 @@
   }
   .hero-ellipse {
     width: 480px;
+    bottom: 108px;
   }
 
   .situations {
@@ -308,6 +309,19 @@
     border-bottom: 1px solid #a1a1a5;
   }
 
+  .reviews-nav__pagination {
+    gap: 10px;
+  }
+  .reviews-nav {
+    gap: 10px;
+  }
+  .reviews-nav__item {
+    font-size: 12px;
+  }
+  .reviews-slider__item p {
+    font-size: 14px;
+  }
+
   .reviews-nav__btn--next,
   .reviews-nav__btn--prev {
     width: 60px;
@@ -358,7 +372,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 810px) {
   .header-logo--active .logo-icon {
     fill: var(--light-color);
   }
@@ -488,18 +502,7 @@
   .reviews-slider__item {
     padding: 30px;
   }
-  .reviews-nav__pagination {
-    gap: 10px;
-  }
-  .reviews-nav {
-    gap: 10px;
-  }
-  .reviews-nav__item {
-    font-size: 12px;
-  }
-  .reviews-slider__item p {
-    font-size: 14px;
-  }
+
   .reviews-nav__btn--next,
   .reviews-nav__btn--prev {
     width: 60px;
@@ -537,7 +540,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   .page-body {
     background: var(--bg-color) url(../images/hero/hero-bg--mobile.png);
     background-repeat: no-repeat;
@@ -547,7 +550,11 @@
   .container {
     padding: 0 12px;
   }
-
+  .hero {
+    height: 100vh;
+    min-height: 640px;
+    max-height: 900px;
+  }
   .header-logo {
     max-width: 110px;
   }
