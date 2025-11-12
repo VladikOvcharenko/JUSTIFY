@@ -563,6 +563,8 @@
 }
 
 .solutions-position p {
+  padding: 2px 8px;
+  background: var(--accent-color);
   font-family: var(--font5);
   font-weight: 500;
   font-size: 20px;
